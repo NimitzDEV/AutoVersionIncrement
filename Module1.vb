@@ -17,7 +17,7 @@
         Next
         If path = "" Or versionFile = "" Or classTemp = "" Then
             fail = True
-            Console.WriteLine("没有参数")
+            Console.WriteLine("No parameters or lack of parameters")
         End If
         If fail = False Then
             Dim clr As Date = Now
@@ -45,19 +45,19 @@
             FileOpen(4, classFile, OpenMode.Output)
             Print(4, fileContent)
             FileClose(4)
-            Console.WriteLine("Done")
+            Console.WriteLine("Increased")
         End If
-        Console.WriteLine("End")
+        Console.WriteLine("Finished")
     End Sub
 
     Private Sub val(ByVal str As String)
         If counter = 1 Then
             path = str
-            Console.WriteLine("工程路径：" & path)
+            Console.WriteLine("Project path：" & path)
             If path.EndsWith("\") = False Then path &= "\"
             If FileIO.FileSystem.DirectoryExists(path) = False Then
                 fail = True
-                Console.WriteLine("工程路径无效")
+                Console.WriteLine("Project path is invalid")
             End If
         End If
         If counter = 2 Then
@@ -65,7 +65,7 @@
             versionFile = path & versionFile
             If FileIO.FileSystem.FileExists(versionFile) = False Then
                 fail = True
-                Console.WriteLine("版本号文件不存在")
+                Console.WriteLine("Version file is not exsist")
             End If
         End If
         If counter = 3 Then
@@ -73,7 +73,7 @@
             classTemp = path & classTemp
             If FileIO.FileSystem.FileExists(classTemp) = False Then
                 fail = True
-                Console.WriteLine("文件模板不存在")
+                Console.WriteLine("Code template is not exsist")
             End If
         End If
         If counter = 4 Then
@@ -81,7 +81,7 @@
             classFile = path & classFile
             If FileIO.FileSystem.FileExists(classFile) = False Then
                 fail = True
-                Console.WriteLine("输出文件不存在")
+                Console.WriteLine("Output code file is not exsist")
             End If
         End If
         counter += 1

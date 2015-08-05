@@ -8,14 +8,14 @@ Imports System.Runtime.InteropServices
 
 '查看程序集特性的值
 
-<Assembly: AssemblyTitle("ConsoleVersionAutoIncrement")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ConsoleVersionAutoIncrement")>
-<Assembly: AssemblyCopyright("Copyright ©  2015")>
+<Assembly: AssemblyTitle("VersionAutoIncrement")>
+<Assembly: AssemblyDescription("VersionAutoIncrement")>
+<Assembly: AssemblyCompany("NimitzDEV")>
+<Assembly: AssemblyProduct("VersionAutoIncrement")>
+<Assembly: AssemblyCopyright("Copyright ©  2015 NimitzDEV")>
 <Assembly: AssemblyTrademark("")>
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(True)>
 
 '如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
 <Assembly: Guid("c792a6ef-eb86-46cd-8a3d-a3ae33db9055")>
